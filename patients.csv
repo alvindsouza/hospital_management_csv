@@ -1,0 +1,14 @@
+Name,Age,Height,Blood Type,Hemoglobin,Blood Pressure,Prescription,Illness,Last Visit,Insurance
+John Doe,30,"5'9""",O+,13.5,120/80,Ibuprofen,Cold,2024-01-10,Blue Cross
+Jane Smith,25,"5'6""",A-,14.2,115/75,Amoxicillin,Flu,2024-01-05,UnitedHealth
+Emily Johnson,40,"5'7""",B+,15.0,130/85,Lisinopril,Hypertension,2024-01-08,Aetna
+Michael Brown,50,"6'1""",AB-,13.7,125/80,Metformin,Diabetes,2024-01-11,Cigna
+Sarah Davis,35,"5'5""",O-,14.0,110/70,Acetaminophen,Headache,2024-01-07,Humanaalvin,16,163,b,43,321312,23123,123131,2024-01-18,234123
+David Wilson,45,"5'11""",B-,13.8,128/79,Atorvastatin,High Cholesterol,2024-02-12,Anthem
+Nora Miller,32,"5'8""",AB+,14.5,121/78,Salbutamol,Asthma,2024-02-18,Medicaid
+Liam Anderson,38,"6'0""",O-,15.2,122/80,Ibuprofen,Migraine,2024-02-16,Blue Shield
+Sophia Johnson,29,"5'5""",A-,13.0,116/74,Azithromycin,Bronchitis,2024-02-14,Medicare
+David Wilson,45,"5'11""",B-,13.8,128/79,Atorvastatin,High Cholesterol,2024-02-12,Anthem
+Nora Miller,32,"5'8""",AB+,14.5,121/78,Salbutamol,Asthma,2024-02-18,Medicaid
+Liam Anderson,38,"6'0""",O-,15.2,122/80,Ibuprofen,Migraine,2024-02-16,Blue Shield
+Sophia Johnson,29,"5'5""",A-,13.0,116/74,Azithromycin,Bronchitis,2024-02-14,Medicare
