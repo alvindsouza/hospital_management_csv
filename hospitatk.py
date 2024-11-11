@@ -1,13 +1,15 @@
 import csv
 import tkinter as tk
+from PIL import Image, ImageTk
 from tkinter import messagebox , simpledialog , ttk
 from datetime import datetime
 
 
-# Patient data file
 patient_data_file = 'patients.csv'
 doctor_data_file = 'doctor.csv'
 
+
+# Define functions for each operation
 
 # Function to check and create CSV file if necessary
 # Function to add a new patient
@@ -361,7 +363,18 @@ def delete_patient():
 # GUI setup
 root = tk.Tk()
 root.title("Hospital Database")
+img_path = "hospital_logo.jpg"  # Replace with your image path if different
+try:
+    img = Image.open(img_path)
+    img = img.resize((100, 100))  # Adjust size as needed
+    logo_img = ImageTk.PhotoImage(img)
+    logo_label = tk.Label(root, image=logo_img, text="")
+    logo_label.pack(pady=(20, 10))
+
+except Exception as e:
+    print(f"Error loading image: {e}")
 heading_label = tk.Label(root, text="⚕ HOSPITAL DATABASE", font=("Arial", 20), fg="red")
+fram = tk. Frame(root, bg= "grey")
 buttons=[("Add New Patient",add_patient),
          ("Delete Patient",delete_patient),
          ("Find Patient",find_patient),
@@ -371,11 +384,15 @@ buttons=[("Add New Patient",add_patient),
          ('Add Doctor',add_doctor)]
 
 
+# Header label
+heading_label = tk.Label(root, text="⚕ COTTONFIELD HOSPITAL ", font=("Arial", 20))
+heading_label.pack(pady=(10, 10))
 
 
+fram.pack(fill='x')
 for name,commmand in buttons:
-    tempval = tk.Button(root, text= name, command=commmand)
-    tempval.pack()
+    tempval = tk.Button(fram, text= name, command=commmand)
+    tempval.pack(pady= 5)
 
 
 
